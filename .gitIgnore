@@ -1,0 +1,46 @@
+# Environment variables / secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# ChromaDB (local vector database - large binary files, regenerable)
+chroma_db/
+
+# Data artifacts (large/regenerable - decide based on your case, see note below)
+data/cleaned/
+data/chunks/
+
+# Model cache (Hugging Face / sentence-transformers download cache)
+.cache/
+*.cache/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints (if you use notebooks later)
+.ipynb_checkpoints/
+
+# Logs
+*.log
