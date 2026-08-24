@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+import re
 
 import chromadb
 from dotenv import load_dotenv
@@ -55,17 +56,34 @@ def answer_query(question: str, k: int = 2) -> tuple[str, list[str]]:
     if k < 1:
         raise ValueError("k must be at least 1.")
 
-    question_embedding = get_embedder().encode(
-        question, normalize_embeddings=True
-    ).tolist()
-    results = get_collection().query(
-        query_embeddings=[question_embedding],
-        n_results=k,
-        include=["documents", "metadatas"],
+    section_match = re.search(
+        r"\bsection\s+(\d+[A-Za-z]*(?:\([0-9A-Za-z]+\))*)\b",
+        question,
+        re.IGNORECASE,
     )
+    if section_match:
+        section_id = section_match.group(1).upper()
+        direct = get_collection().get(
+            ids=[section_id], include=["documents", "metadatas"]
+        )
+        documents = direct["documents"]
+        metadatas = direct["metadatas"]
+    else:
+        documents = []
+        metadatas = []
 
-    documents = results["documents"][0]
-    metadatas = results["metadatas"][0]
+    if not documents:
+        question_embedding = get_embedder().encode(
+            question, normalize_embeddings=True
+        ).tolist()
+        results = get_collection().query(
+            query_embeddings=[question_embedding],
+            n_results=k,
+            include=["documents", "metadatas"],
+        )
+        documents = results["documents"][0]
+        metadatas = results["metadatas"][0]
+
     sections = [metadata["section"] for metadata in metadatas]
     MAX_CHARS_PER_CHUNK = 2000  # roughly ~500 tokens per chunk
 
@@ -98,7 +116,11 @@ Question: {question}
 def main() -> None:
     print("DocuMind Income-tax Act Q&A. Type 'exit' to quit.")
     while True:
-        question = input("\nQuestion: ").strip()
+        try:
+            question = input("\nQuestion: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\nGoodbye.")
+            break
         if question.lower() == "exit":
             break
         try:

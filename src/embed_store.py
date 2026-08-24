@@ -41,7 +41,9 @@ def main() -> None:
         batch = chunks[start : start + BATCH_SIZE]
         batch_ids = ids[start : start + BATCH_SIZE]
         texts = [chunk["text"] for chunk in batch]
-        embeddings = model.encode(texts, normalize_embeddings=True).tolist()
+        embeddings = model.encode(
+            texts, normalize_embeddings=True, show_progress_bar=True
+        ).tolist()
         collection.upsert(
             ids=batch_ids,
             documents=texts,
