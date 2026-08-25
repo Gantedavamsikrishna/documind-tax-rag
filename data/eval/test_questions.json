@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What is the definition of a 'Capital Asset'?",
+    "expected_sections": ["2(14)"]
+  },
+  {
+    "question": "What is section 80C?",
+    "expected_sections": ["80C"]
+  },
+  {
+    "question": "What is section 80CCD(1)?",
+    "expected_sections": ["80CCD"]
+  },
+  {
+    "question": "What deductions are allowed from income from house property under Section 24?",
+    "expected_sections": ["24"]
+  },
+  {
+    "question": "What is the tax rate for short-term capital gains under Section 111A?",
+    "expected_sections": ["111A"]
+  },
+  {
+    "question": "Explain the tax exemptions available on the sale of a residential house under Section 54.",
+    "expected_sections": ["54"]
+  },
+  {
+    "question": "What are the tax slabs under the new concessional tax regime of Section 115BAC?",
+    "expected_sections": ["115BAC"]
+  },
+  {
+    "question": "What are the eligibility criteria for presumptive taxation under Section 44AD?",
+    "expected_sections": ["44AD"]
+  },
+  {
+    "question": "What is the rate of presumptive tax for professionals under Section 44ADA?",
+    "expected_sections": ["44ADA"]
+  },
+  {
+    "question": "What happens to unrealized rent received subsequently under Section 25A?",
+    "expected_sections": ["25A"]
+  },
+  {
+    "question": "What are the conditions for deduction under Section 35ABB?",
+    "expected_sections": ["35ABB"]
+  },
+  {
+    "question": "What is a 'previous year' as per the Act?",
+    "expected_sections": ["3"]
+  },
+  {
+    "question": "What is agricultural income under the Income Tax Act?",
+    "expected_sections": ["2(1A)"]
+  },
+  {
+    "question": "What is section 269UA?",
+    "expected_sections": ["269UA"]
+  },
+  {
+    "question": "What is section 10?",
+    "expected_sections": ["10"]
+  },
+  {
+    "question": "What is the GST rate for restaurants?",
+    "expected_sections": [],
+    "expect_insufficient_context": true,
+    "note": "GST is not covered by the Income Tax Act - tests hallucination resistance"
+  },
+  {
+    "question": "What was the income tax rate in 1990?",
+    "expected_sections": [],
+    "expect_insufficient_context": true,
+    "note": "Outdated/superseded rate info - tests whether model stays grounded in retrieved text rather than guessing"
+  }
+]

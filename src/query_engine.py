@@ -57,7 +57,7 @@ def answer_query(question: str, k: int = 2) -> tuple[str, list[str]]:
         raise ValueError("k must be at least 1.")
 
     section_match = re.search(
-        r"\bsection\s+(\d+[A-Za-z]*(?:\([0-9A-Za-z]+\))*)\b",
+        r"\bsection\s+(\d+[A-Za-z]*(?:\([0-9A-Za-z]+\))*)",
         question,
         re.IGNORECASE,
     )
@@ -68,6 +68,16 @@ def answer_query(question: str, k: int = 2) -> tuple[str, list[str]]:
         )
         documents = direct["documents"]
         metadatas = direct["metadatas"]
+
+        if not documents:
+            base_id = re.sub(r"\([0-9A-Za-z]+\)$", "", section_id)
+            if base_id != section_id:
+                direct = get_collection().get(
+                    ids=[base_id], include=["documents", "metadatas"]
+                )
+                documents = direct["documents"]
+                metadatas = direct["metadatas"]
+
     else:
         documents = []
         metadatas = []

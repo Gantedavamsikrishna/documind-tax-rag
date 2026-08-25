@@ -1,0 +1,230 @@
+{
+  "total_questions": 17,
+  "retrieval_accuracy": 100.0,
+  "citation_accuracy": 93.3,
+  "hallucination_resistance": 100.0,
+  "results": [
+    {
+      "question": "What is the definition of a 'Capital Asset'?",
+      "expected_sections": [
+        "2(14)"
+      ],
+      "retrieved_sections": [
+        "2(14)",
+        "2(29AA)"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Definition of a \u201cCapital Asset\u201d (Income\u2011Tax Act, 1961 \u2013 Section\u202f2(14))**\n\nA \u201ccapital asset\u201d means:\n\n1. **(a)** Property of any kind held by an assessee, whether or not connected with his business or"
+    },
+    {
+      "question": "What is section 80C?",
+      "expected_sections": [
+        "80C"
+      ],
+      "retrieved_sections": [
+        "80C"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Section\u202f80C** is a provision of the Income\u2011Tax Act, 1961 that allows an individual (or a Hindu undivided family) to claim a deduction from their total income for certain payments made in the previou"
+    },
+    {
+      "question": "What is section 80CCD(1)?",
+      "expected_sections": [
+        "80CCD"
+      ],
+      "retrieved_sections": [
+        "80CCD"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Section\u202f80CCD(1)**\n\nSection\u202f80CCD(1) provides a deduction for contributions made to a pension scheme notified (or to be notified) by the Central Government. It states that an assessee who has paid o"
+    },
+    {
+      "question": "What deductions are allowed from income from house property under Section 24?",
+      "expected_sections": [
+        "24"
+      ],
+      "retrieved_sections": [
+        "24"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Deductions allowed from income under the head \u201cIncome from house property\u201d (Section\u202f24)**  \n\n1. **Thirty\u2011per\u2011cent of the annual value**  \n   *A deduction equal to 30\u202f% of the annual value of the pro"
+    },
+    {
+      "question": "What is the tax rate for short-term capital gains under Section 111A?",
+      "expected_sections": [
+        "111A"
+      ],
+      "retrieved_sections": [
+        "111A"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "Under Section\u202f111A of the Income\u2011Tax Act, short\u2011term capital gains (on equity shares, equity\u2011oriented units or business\u2011trust units) are taxed at:\n\n* **15\u202f%** for any transfer that takes place **befor"
+    },
+    {
+      "question": "Explain the tax exemptions available on the sale of a residential house under Section 54.",
+      "expected_sections": [
+        "54"
+      ],
+      "retrieved_sections": [
+        "54"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Section\u202f54 \u2013 Exemption on the sale of a residential house**\n\nUnder Section\u202f54 of the Income\u2011Tax Act, 1961 an individual or a Hindu Undivided Family (HUF) who sells a residential house (the *original"
+    },
+    {
+      "question": "What are the tax slabs under the new concessional tax regime of Section 115BAC?",
+      "expected_sections": [
+        "115BAC"
+      ],
+      "retrieved_sections": [
+        "115BAC"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "Under the new concessional tax regime introduced by **Section\u202f115BAC** (applicable for assessment years beginning on or after\u202f1\u202fApril\u202f2021 and before\u202f1\u202fApril\u202f2024), the income\u2011tax payable is calculate"
+    },
+    {
+      "question": "What are the eligibility criteria for presumptive taxation under Section 44AD?",
+      "expected_sections": [
+        "44AD"
+      ],
+      "retrieved_sections": [
+        "44AD"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Eligibility criteria for presumptive taxation under Section\u202f44AD**\n\n1. **Eligible assessee** \u2013 The taxpayer must be an *eligible assessee* as defined in the Act.  \n2. **Eligible business** \u2013 The tax"
+    },
+    {
+      "question": "What is the rate of presumptive tax for professionals under Section 44ADA?",
+      "expected_sections": [
+        "44ADA"
+      ],
+      "retrieved_sections": [
+        "44ADA"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "Under Section\u202f44ADA, a professional who meets the prescribed conditions is required to pay tax on **50\u202f% of his/her total gross receipts** from that profession.  \nThis is stated in sub\u2011section\u202f(1) of "
+    },
+    {
+      "question": "What happens to unrealized rent received subsequently under Section 25A?",
+      "expected_sections": [
+        "25A"
+      ],
+      "retrieved_sections": [
+        "25A"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "Under Section\u202f25A of the Income\u2011Tax Act, 1961, any rent that has been *unrealised* (i.e., not yet received) but is *realised subsequently* in a later year is treated as if it had been received in that"
+    },
+    {
+      "question": "What are the conditions for deduction under Section 35ABB?",
+      "expected_sections": [
+        "35ABB"
+      ],
+      "retrieved_sections": [
+        "35ABB"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Conditions for a deduction under Section\u202f35ABB**\n\n1. **Nature of the expenditure**  \n   \u2022 The expenditure must be *in the nature of capital expenditure* incurred for acquiring a right to operate tel"
+    },
+    {
+      "question": "What is a 'previous year' as per the Act?",
+      "expected_sections": [
+        "3"
+      ],
+      "retrieved_sections": [
+        "3",
+        "145B"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Answer**\n\nAccording to the Income\u2011Tax Act, 1961, a *\u201cprevious year\u201d* is defined in **Section\u202f3 (CHAPTER\u202fII)** as follows:\n\n> \u201cFor the purposes of this Act, **\u2018previous year\u2019 means the financial year"
+    },
+    {
+      "question": "What is agricultural income under the Income Tax Act?",
+      "expected_sections": [
+        "2(1A)"
+      ],
+      "retrieved_sections": [
+        "2(1A)",
+        "80PA"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Agricultural income** is defined in the Income\u2011Tax Act, 1961, under **Section\u202f2(1A)**.  \nAccording to that section, \u201cagricultural income\u201d means:\n\n1. **(a)** Any rent or revenue derived from land tha"
+    },
+    {
+      "question": "What is section 269UA?",
+      "expected_sections": [
+        "269UA"
+      ],
+      "retrieved_sections": [
+        "269UA"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "hallucination_check_passed": null,
+      "answer_preview": "**Section\u202f269UA of the Income\u2011Tax Act, 1961**\n\nSection\u202f269UA is a statutory provision that defines key terms used in the Act\u2019s provisions dealing with the transfer of immovable property. Specifically,"
+    },
+    {
+      "question": "What is section 10?",
+      "expected_sections": [
+        "10"
+      ],
+      "retrieved_sections": [
+        "10"
+      ],
+      "retrieval_hit": true,
+      "citation_hit": false,
+      "hallucination_check_passed": null,
+      "answer_preview": ""
+    },
+    {
+      "question": "What is the GST rate for restaurants?",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "115AB",
+        "80HHD"
+      ],
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "hallucination_check_passed": true,
+      "answer_preview": "The retrieved statutory context does not contain any information about GST rates for restaurants. Therefore, I cannot provide an answer based on the given excerpts."
+    },
+    {
+      "question": "What was the income tax rate in 1990?",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "280ZD",
+        "280ZC"
+      ],
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "hallucination_check_passed": true,
+      "answer_preview": "The retrieved statutory context does not contain any information about the income\u2011tax rate in 1990, so I cannot answer that question based on the provided excerpts."
+    }
+  ]
+}
